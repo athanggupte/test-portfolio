@@ -11,49 +11,42 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Athang Gupte</div>
+    <div class="text-3xl py-3 font-bold">Game Engine Developer and C++ Enthusiast Extraordinaire</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        Passionate computer scientist with a track record of innovation and excellence in both gaming and real-world applications. From revolutionizing animation technology at PlayStation's Santa Monica Studio to creating a 3D game engine from scratch, I thrive on pushing the boundaries of technology with code.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+      <a class="btn" href="mailto:athang213@gmail.com" target="_blank"> Let's connect!</a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
+    title="Apex Game Engine"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="In-house custom C++, OpenGL/Vulkan game engine."
     url="#"
-    badge="NEW"
+    badges={["Game-dev", "Software Engineering"]}
+    tags={["C++20", "OpenGL", "Vulkan", "GLSL", "Lua scripting"]}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+  title="SENVA-2 (NASA SUITS)"
+  img="/post_img.webp"
+  desc="MXR-based Heads-up display and digital voice assistant for aiding astronauts during Extra-Vehicular Activities."
+  url="#"
+  badges={["NLP", "AI", "Mixed Reality"]}
+  tags={["Unity", "C#"]}
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
+  <a href="/projects" >View all projects...</a>
+
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>

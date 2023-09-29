@@ -1,51 +1,62 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectBaseLayout from "../layouts/ProjectBaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<ProjectBaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
+    title="Apex Game Engine"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="In-house custom game engine for 3D first and thrid person action-adventure games."
     url="#"
-    badge="NEW"
-  />
+    badges={["Game-dev", "Software Engineering"]}
+    tags={["C++20", "OpenGL", "Vulkan", "GLSL", "Lua scripting"]}
+  >
+    <ul class="project-details-list">
+      <li>PBR shading with dynamic lights and shadows, multiple cameras and screen-space reflections.</li>
+      <li>GPU-based particle system with point mass physics simulation.</li>
+      <li>Engine tools for robust workflow - visual shader editor, 3D level & component editor, RTTI generator.</li>
+      <li>Native C++ scripting pipeline using DLLs and custom runtime type reflection using LLVM.</li>
+      <li>2D physics using built-in impulse-based physics engine with support for springs, ropes and trusses.</li>
+      <li>3D phyiscs simulation using NVIDIA PhysX 3.4.</li>
+    </ul>
+  </HorizontalCard>
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
+    title="SENVA-2 (NASA SUITS)"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="MXR-based Heads-up display and digital voice assistant for aiding astronauts during Extra-Vehicular Activities."
     url="#"
+    badges={["NLP", "AI", "Mixed Reality"]}
+    tags={["Unity", "C#"]}
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold my-5">Games & Prototypes</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
+    title="Hue Hustle"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    desc="Prototype game to demonstrate an innovative game mechanic."
+    url="https://athanggupte.github.io/Hue-Hustle"
+    badge="Game-dev"
+    tags={["Unity", "C#"]}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
+    title="Un-Real"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    desc="Game submission for Brackeys 1 week Game Jam 2022.1"
+    url="https://athang213.itch.io/Un-Real"
+    badge="Game-dev"
+    tags={["Unreal Engine 4", "Blueprints", "C++"]}
   />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-</BaseLayout>
+  <!-- <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Software Engineering</div>
+  </div> -->
+</ProjectBaseLayout>
