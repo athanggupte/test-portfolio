@@ -8,12 +8,12 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
-  <div class="mb-10 text-justify">
+  <!-- <div class="mb-10 text-justify">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+  </div> -->
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -49,8 +49,9 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       location="Los Angeles, CA, USA"
     >
       <ul class="project-details-list">
-        <li>Extended debugging tools for animation system in AAA engine</li>
-        <li>Implemented 2-bone IK node in animation graph blending tool</li>
+        <li>Enhanced the animation tool with support for creating, editing, saving, and applying Event Tag Collections, streamlining metadata management for animations and improving collaboration among animators.</li>
+        <li>Developed a 2-bone IK node in the animation graph blending tool within a tight 1-week timeframe, providing explicit control over procedural animation blending, ultimately enhancing the usability of the IK system.</li>
+        <li>Contributed to the improvement of animation debugging capabilities in Santa Monica's in-house engine for an upcoming AAA title following the success of God of War Ragnarok.</li>
       </ul>
     </TimeLineElement>
     <TimeLineElement
@@ -60,7 +61,11 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       end="Jul 2022"
       location="Pune, India"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <ul class="project-details-list">
+        <li>Engineered custom scripts for AWS, Azure, GCP, IBM Gen2, and Oracle cloud platforms to systematically retrieve pricing data and calculate the deployment costs of virtual machines based on OS, RAM, bandwidth, and add-ons.</li>
+        <li>Implemented a feature enabling cost comparisons across multiple cloud providers, optimizing decision-making processes for deploying groups of virtual machines.</li>
+        <li>Collaborated with a dynamic team of 5 engineers to bolster the performance and reliability of the cloud migration and disaster recovery suite, addressing and resolving over 25 critical issues.</li>
+      </ul>
     </TimeLineElement>
     <TimeLineElement
       company="IoTIoT"
@@ -69,11 +74,15 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       end="Jul 2020"
       location="Pune, India"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <ul class="project-details-list">
+      <li>Spearheaded the development of APIs for CoAP and AMQP protocols within ShunyaOS, enhancing connectivity and expanding the functionality of IoT devices.</li>
+      <li>Played a pivotal role in future intern training, designing a comprehensive curriculum on ZeroMQ and AMQP protocols and their APIs, fostering knowledge transfer and skill development within the organization.</li>
+      <li>Contributed to the deployment of an Analog-Digital Conversion API for STM32 and CC2541 microprocessor families, further solidifying the cross-platform compatibility and versatility of IoTIoT's solutions.</li>
+    </ul>
     </TimeLineElement>
   </div>
 
-  <div class="mb-5">
+  <!-- <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
@@ -84,21 +93,51 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li>
       <a href="#" target="_blank"> Certification Name (with link)</a>
     </li>
-  </ul>
+  </ul> -->
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>C++11/17/20</li>
-    <li>Python</li>
+  <div class="mb-2">
+    <div class="text-xl w-full font-bold">Languages and Frameworks</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-2">
+    <li>C++ 11/17/20</li>
     <li>C</li>
+    <li>Python</li> 
     <li>C#</li>
+    <li>Lua</li>
+    <li>Java</li>
     <li>OpenGL</li>
     <li>Vulkan</li>
-    <li>CUDA</li>
     <li>MPI</li>
     <li>OpenMP</li>
+    <li>CUDA</li>
+    <li>WinForms</li>
+    <li>ReactJS</li>
+    <li>node.js</li>
+    <li>Qt</li>
+    <li>SQL</li>
+    <li>MongoDB</li>
+    <li></li>
+  </ul>
+
+  <div class="mb-2">
+    <div class="text-xl w-full font-bold">Tools and Applications</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Git</li>
+    <li>Perforce</li>
+    <li>Jenkins</li>
+    <li>JIRA</li>
+    <li>Unity</li>
+    <li>Unreal Engine 4</li>
+    <li>Maya (Tool + SDK)</li>
+    <li>Android Studio</li>
+    <li>Visual Studio</li>
+    <li></li>
   </ul>
 </BaseLayout>
