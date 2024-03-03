@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import HB from "../components/HighlightBullet.astro";
+import { Image } from "@astrojs/image/components";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -24,12 +26,42 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
+	  <div class="text-3xl w-full font-bold mb-4">{"⚡"} Highlights {"⚡"}</div>
+  </div>
+
+  <div class="text-2xl w-full font-bold mb-2"><HB/> Bloom Post-processing Effect</div>
+  <Image
+	src="https://user-images.githubusercontent.com/45060273/211588060-1490bed0-105d-4d5b-b7a9-e2e9a98a555f.png"
+	aspectRatio="730:384"
+	width={900}
+	format="png"
+	alt={"Bloom postprocessing effect"}
+	class="max-w-full rounded-lg"
+  />
+
+  <div class="divider w-full"></div>  
+  <div class="text-2xl w-full font-bold mt-2 mb-2"><HB /> Image-based PBR Renderer for Refractive Glass</div>
+  <video width="900" class="max-w-full rounded-lg" controls autoplay loop>
+	  <source src="https://github.com/athanggupte/xdevapps.github.io/assets/45060273/83837f07-03d1-412c-8976-3befd338d90c" type="video/mp4">
+	  Download <a href="https://github.com/athanggupte/xdevapps.github.io/assets/45060273/83837f07-03d1-412c-8976-3befd338d90c">mp4</a>
+	</video>	
+  
+  <div class="divider w-full"></div>
+  <div class="text-2xl w-full font-bold mt-2 mb-2"><HB /> NVIDIA PhysX 3.4 Integration for Real-time Physics Simulation</div>
+  <video width="900" class="max-w-full rounded-lg" controls autoplay loop>
+	<source src="https://user-images.githubusercontent.com/45060273/194432860-0ba5dbe1-848b-4014-9f10-dd253f9fcbd5.mp4" type="video/mp4">
+	Download <a href="https://user-images.githubusercontent.com/45060273/194432860-0ba5dbe1-848b-4014-9f10-dd253f9fcbd5.mp4">mp4</a>
+  </video>
+
+
+  <div class="divider w-full"></div>
+  <div class="mt-8">
     <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
   </div>
 
   <HorizontalCard
     title="Apex Game Engine"
-    img="/post_img.webp"
+    img="/favicon.svg"
     desc="In-house custom C++, OpenGL/Vulkan game engine."
     url="#"
     badges={["Game-dev", "Software Engineering"]}
@@ -38,7 +70,7 @@ const last_posts = posts.slice(0, 3);
   <div class="divider my-0"></div>
   <HorizontalCard
   title="SENVA-2 (NASA SUITS)"
-  img="/post_img.webp"
+  img="/NASA_SUITS_Team_Aegis.png"
   desc="MXR-based HUD and digital voice assistant for aiding NASA's next batch of astronauts 🧑‍🚀 during Extra-Vehicular Activities on the Moon 🌙"
   url="#"
   badges={["NLP", "AI", "Mixed Reality"]}
